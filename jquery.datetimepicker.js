@@ -2039,6 +2039,7 @@
 						if (verticalPosition + datetimepicker[0].offsetHeight > windowHeight + windowScrollTop) {
 							verticalPosition = dateInputOffset.top - datetimepicker[0].offsetHeight + 1;
 						}
+						verticalPosition -= $(options.parentID).offset().top;
 					}
 
 					if (verticalPosition < 0) {
